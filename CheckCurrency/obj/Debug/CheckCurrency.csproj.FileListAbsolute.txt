@@ -1,0 +1,10 @@
+C:\Users\Kuzmi\RiderProjects\ConsoleApplication1\CheckCurrency\bin\Debug\CheckCurrency.exe
+C:\Users\Kuzmi\RiderProjects\ConsoleApplication1\CheckCurrency\bin\Debug\CheckCurrency.pdb
+C:\Users\Kuzmi\RiderProjects\ConsoleApplication1\CheckCurrency\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Kuzmi\RiderProjects\ConsoleApplication1\CheckCurrency\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Kuzmi\RiderProjects\ConsoleApplication1\CheckCurrency\obj\Debug\CheckCurrency.csproj.AssemblyReference.cache
+C:\Users\Kuzmi\RiderProjects\ConsoleApplication1\CheckCurrency\obj\Debug\CheckCurrency.csproj.SuggestedBindingRedirects.cache
+C:\Users\Kuzmi\RiderProjects\ConsoleApplication1\CheckCurrency\obj\Debug\CheckCurrency.csproj.CoreCompileInputs.cache
+C:\Users\Kuzmi\RiderProjects\ConsoleApplication1\CheckCurrency\obj\Debug\CheckCurrency.csproj.CopyComplete
+C:\Users\Kuzmi\RiderProjects\ConsoleApplication1\CheckCurrency\obj\Debug\CheckCurrency.exe
+C:\Users\Kuzmi\RiderProjects\ConsoleApplication1\CheckCurrency\obj\Debug\CheckCurrency.pdb
