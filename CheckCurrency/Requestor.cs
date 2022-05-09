@@ -37,9 +37,9 @@ namespace CheckCurrency
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
 
-            using(HttpWebResponse response = (HttpWebResponse)request.GetResponse())
-            using(Stream stream = response.GetResponseStream())
-            using(StreamReader reader = new StreamReader(stream))
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            Stream stream = response.GetResponseStream();
+            StreamReader reader = new StreamReader(stream);
             {
                 return reader.ReadToEnd();
             }
