@@ -26,7 +26,7 @@ namespace CheckCurrency
         public string Definition { get; set; }
 
         public override string ToString()
-        {
+        {   
             return String.Format("Currency: [ name: {0}; Cost in rubles: {1}; Short definition: {2} ]", Name, Cost, Definition);
         }
     }

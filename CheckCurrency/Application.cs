@@ -1,45 +1,43 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace CheckCurrency
 {
     class Application
     {
-        private const string TEST_URL = "http://localhost:8080/currency";
-        private const string URL = "https://www.cbr-xml-daily.ru/daily_json.js";
-        
+        private static readonly string TEST_URL = Environment.GetEnvironmentVariable("TEST_URL");
+        private static readonly string URL_JSON = Environment.GetEnvironmentVariable("URL_JSON");
+        private static readonly string URL_XML =  Environment.GetEnvironmentVariable("URL_XML");
+
         private static readonly JsonParser<Curse> Parser = new JsonParser<Curse>();
         private static readonly Requestor requestor = new Requestor();
 
         public static void Main(string[] args)
         {
             Application app = new Application();
-            
-            // app.test();
-            Console.WriteLine(app.getCurse());
+
+            // app.startJavaServer();
+            app.startJson();
         }
 
-        private void test()
+        private void startJavaServer()
         {
             Console.WriteLine(Parser.Deserialize(requestor.GetRequest(TEST_URL)));
         }
 
+        private void startJson()
+        {
+            
+            Console.WriteLine(getCurse());
+            Console.Read();
+        }
+
         private Curse getCurse()
         {
-
-            string request = requestor.GetRequest(URL);
+            string request = requestor.GetRequest(URL_JSON);
             Curse curse =  Parser.Deserialize(request);
+            
             return curse;
-        }
-    }
-
-    class Person
-    {
-        public string name { get; set; }
-        public int age { get; set; }
-
-        public override string ToString()
-        {
-            return String.Format("Person [name: {0}, age: {1}]", name, age);
         }
     }
 }
