@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IO;
 using System.Runtime.CompilerServices;
+using System.Xml;
+using System.Xml.Serialization;
 using Newtonsoft.Json;
 
 namespace CheckCurrency
@@ -27,7 +29,7 @@ namespace CheckCurrency
         {
             if (!File.Exists(filename))
                 throw new IOException(String.Format("File with filename { {0} } didn't found", filename));
-           
+            
             return JsonConvert.DeserializeObject<T>(File.ReadAllText(filename));
         }
         
